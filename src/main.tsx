@@ -7,6 +7,7 @@ import CICD from './pages/CICD.tsx';
 import TestDocs from './pages/TestDocs.tsx';
 import TestTypes from './pages/TestTypes.tsx';
 import TestTechniques from './pages/TestTechniques.tsx';
+import DataTypes from './pages/DataTypes.tsx';
 
 import {
   createBrowserRouter,
@@ -29,6 +30,7 @@ const router = createBrowserRouter(
       <Route path="/test-docs" element={<TestDocs />} />
       <Route path="/test-types" element={<TestTypes />} />
       <Route path="/test-techniques" element={<TestTechniques />} />
+      <Route path="/data-types" element={<DataTypes />} />
     </Route>,
   ),
 );

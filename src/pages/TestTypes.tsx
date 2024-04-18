@@ -4,7 +4,7 @@ export default function TestTypes() {
   return (
     <div className="flex flex-col md:flex-row">
       {/* Material to study */}
-      <div className="max-w-[70ch] overflow-y-scroll max-h-[calc(100vh-4rem)] pr-1">
+      <div className="max-w-[70ch] overflow-y-scroll max-h-[calc(100vh-4rem)] pr-1 py-3">
         <h2 className="text-2xl text-center font-bold mb-3">Types, Methods, Approaches, Levels</h2>
 
         <a className="link text-sm" href="https://learn.epam.com/" target="_blank">
@@ -180,7 +180,7 @@ export default function TestTypes() {
       </div>
 
       {/* Question and Answer */}
-      <div className="max-w-[55ch] overflow-y-scroll max-h-[calc(100vh-4rem)] px-2">
+      <div className="max-w-[55ch] overflow-y-scroll max-h-[calc(100vh-4rem)] px-2 py-3">
         <h2 className="text-xl font-bold mb-3">Question and Answer</h2>
         <Note />
         <div className="border-l hover:border-neutral border-base-100 p-1 max-w-[35ch] md:max-w-[55ch] mb-1">

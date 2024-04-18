@@ -42,6 +42,7 @@ export default function Sidebar({ closeSideBar }: props) {
               Criteria and understanding of SDLC Agile framework (Scrum, Kanban)
             </Link>
           </li>
+          <li>STLC</li>
           <li>
             <Link
               to="/cicd"
@@ -90,8 +91,20 @@ export default function Sidebar({ closeSideBar }: props) {
       </div>
       <div>
         <strong className="text-md">JavaScript</strong>
-        <ul className="list-disc list-inside pl-3" role="list">
-          <li>Data types</li>
+        <ul
+          className="list-none pl-3 border-l border-neutral text-gray-300 flex flex-col gap-1"
+          role="list"
+        >
+          <li>
+            <Link
+              to="/data-types"
+              onClick={closeSideBar}
+              className="hover:bg-slate-500 rounded-md px-1 inline-block w-full group active side-bar-link"
+            >
+              Data types{' '}
+              <span className="text-xs">(Reference vs Primitive, Mutable vs Immutable)</span>
+            </Link>
+          </li>
           <li>Type conversions</li>
           <li>Hoisting</li>
           <li>Closure and Scope</li>
@@ -104,9 +117,11 @@ export default function Sidebar({ closeSideBar }: props) {
       </div>
       <div>
         <strong className="text-md">Additional</strong>
-        <ul className="list-disc list-inside pl-3" role="list">
+        <ul
+          className="list-none pl-3 border-l border-neutral text-gray-300 flex flex-col gap-1"
+          role="list"
+        >
           <li>Event loop Browser, Node</li>
-          <li>Mutability vs Immutability</li>
         </ul>
       </div>
     </div>
