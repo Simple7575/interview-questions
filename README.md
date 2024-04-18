@@ -1,0 +1,1 @@
+This website has been created for educational purposes, it contains all questions which I have been asked during interviews for web developer or automation tester. I will try my best to include all sources used to create this website. You are welcome to contribute and make it better.
