@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #282a36;
+  --neutral: #9ca3af;
+  --accent: #ffb86c;
+
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+
+@media (prefers-color-scheme: light) {
+  /*  */
+}
+
+[data-theme='light'] {
+  color-scheme: light;
+  /*  */
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+  /*  */
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+strong {
+  color: var(--accent);
+}
+
+mark {
+  background: #403100a1;
+  color: yellow;
+  padding: 0.1px;
+  font-size: 14px;
+}
