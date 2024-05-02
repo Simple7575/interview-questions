@@ -105,7 +105,32 @@ export default function Sidebar({ closeSideBar }: props) {
               <span className="text-xs">(Reference vs Primitive, Mutable vs Immutable)</span>
             </Link>
           </li>
-          <li>Type conversions</li>
+          <li>
+            Type conversions
+            <ul
+              className="list-none pl-3 border-l border-neutral text-gray-300 flex flex-col gap-1"
+              role="list"
+            >
+              <li>
+                <Link
+                  to="/type-conversion/primitives"
+                  onClick={closeSideBar}
+                  className="hover:bg-slate-500 rounded-md px-1 inline-block w-full group active side-bar-link"
+                >
+                  Primitives
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/type-conversion/objects"
+                  onClick={closeSideBar}
+                  className="hover:bg-slate-500 rounded-md px-1 inline-block w-full group active side-bar-link"
+                >
+                  Objects
+                </Link>
+              </li>
+            </ul>
+          </li>
           <li>Hoisting</li>
           <li>Closure and Scope</li>
           <li>Methods of Objects, Arrays, Strings</li>

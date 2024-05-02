@@ -8,6 +8,8 @@ import TestDocs from './pages/TestDocs.tsx';
 import TestTypes from './pages/TestTypes.tsx';
 import TestTechniques from './pages/TestTechniques.tsx';
 import DataTypes from './pages/DataTypes.tsx';
+import TypeConversionPrimitives from './pages/TypeConversionPrimitives.tsx';
+import TypeConversionObjects from './pages/TypeConversionObjects.tsx';
 
 import {
   createBrowserRouter,
@@ -31,6 +33,10 @@ const router = createBrowserRouter(
       <Route path="/test-types" element={<TestTypes />} />
       <Route path="/test-techniques" element={<TestTechniques />} />
       <Route path="/data-types" element={<DataTypes />} />
+      <Route path="/type-conversion">
+        <Route path="primitives" element={<TypeConversionPrimitives />} />
+        <Route path="objects" element={<TypeConversionObjects />} />
+      </Route>
     </Route>,
   ),
 );
